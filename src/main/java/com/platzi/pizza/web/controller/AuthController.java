@@ -1,7 +1,5 @@
 package com.platzi.pizza.web.controller;
 
-import org.apache.catalina.connector.Response;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,7 +20,6 @@ public class AuthController {
     private final AuthenticationManager authenticationManager;
     private final JwtUtil jwtUtil;
 
-    @Autowired
     public AuthController(AuthenticationManager authenticationManager) {
         this.authenticationManager = authenticationManager;
         this.jwtUtil = new JwtUtil();

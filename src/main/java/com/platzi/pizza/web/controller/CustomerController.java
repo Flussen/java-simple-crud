@@ -7,7 +7,6 @@ import com.platzi.pizza.service.OrderService;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +19,6 @@ public class CustomerController {
     private final CustomerService customerService;
     private final OrderService orderService;
 
-    @Autowired
     public CustomerController(CustomerService customerService, OrderService orderService) {
         this.customerService = customerService;
         this.orderService = orderService;

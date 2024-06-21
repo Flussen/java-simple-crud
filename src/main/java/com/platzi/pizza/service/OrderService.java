@@ -4,7 +4,6 @@ import com.platzi.pizza.persistence.entity.OrderEntity;
 import com.platzi.pizza.persistence.projection.OrderSummary;
 import com.platzi.pizza.persistence.repository.OrderRepository;
 import com.platzi.pizza.service.dto.RandomOrderDto;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,9 +19,8 @@ public class OrderService {
 
     private static final String DELIVERY = "D";
     private static final String CARRYOUT = "C";
-    private static final String ON_SITE = "S";
+    //private static final String ON_SITE = "S";
 
-    @Autowired
     public OrderService(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }

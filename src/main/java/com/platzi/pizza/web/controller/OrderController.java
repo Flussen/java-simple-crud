@@ -4,7 +4,6 @@ import com.platzi.pizza.persistence.entity.OrderEntity;
 import com.platzi.pizza.persistence.projection.OrderSummary;
 import com.platzi.pizza.service.OrderService;
 import com.platzi.pizza.service.dto.RandomOrderDto;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +19,6 @@ import java.util.List;
 public class OrderController {
     private final OrderService orderService;
 
-    @Autowired
     public OrderController(OrderService orderService) {
         this.orderService = orderService;
     }

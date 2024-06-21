@@ -5,7 +5,6 @@ import com.platzi.pizza.persistence.repository.PizzaPagSortRepository;
 import com.platzi.pizza.persistence.repository.PizzaRepository;
 import com.platzi.pizza.service.dto.UpdatePizzaPriceDto;
 import com.platzi.pizza.service.exception.EmailApiException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -20,7 +19,6 @@ public class PizzaService {
     private final PizzaRepository pizzaRepository;
     private final PizzaPagSortRepository pizzaPagSortRepository;
 
-    @Autowired
     public PizzaService(PizzaRepository pizzaRepository, PizzaPagSortRepository pizzaPagSortRepository) {
         this.pizzaRepository = pizzaRepository;
         this.pizzaPagSortRepository = pizzaPagSortRepository;

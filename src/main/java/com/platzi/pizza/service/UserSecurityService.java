@@ -3,8 +3,6 @@ package com.platzi.pizza.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.config.core.GrantedAuthorityDefaults;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -22,7 +20,6 @@ public class UserSecurityService implements UserDetailsService{
 
     private final UserRepository userRepository;
 
-    @Autowired
     public UserSecurityService(UserRepository userRepository){
         this.userRepository = userRepository;
     }
